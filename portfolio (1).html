@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ayesha Siddiqa | Project Coordination & SQA Portfolio</title>
+<style>
+:root{--navy:#0f2a4a;--ac:#0d9488;--acs:#e6f5f3;--am:#d97706;--ams:#fdf3e2;--bg:#f3f6fa;--card:#fff;--tx:#17212f;--mu:#5a6778;--ln:#dfe5ee;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e141c;--card:#161e29;--tx:#e6ebf2;--mu:#98a4b5;--ln:#263142;--acs:#12312f;--ams:#33270f;--ac:#2dd4bf;--am:#fbbf24}}
+:root[data-theme="dark"]{--bg:#0e141c;--card:#161e29;--tx:#e6ebf2;--mu:#98a4b5;--ln:#263142;--acs:#12312f;--ams:#33270f;--ac:#2dd4bf;--am:#fbbf24}
+html{scroll-behavior:smooth;scroll-padding-top:calc(58px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--navy);z-index:9;display:flex;gap:2px;padding:10px 18px;overflow-x:auto;white-space:nowrap}
+nav b{color:#fff;margin-right:auto;padding-right:18px;letter-spacing:.3px}
+nav a{color:#c5d3e6;text-decoration:none;padding:4px 11px;border-radius:6px;font-size:14px}
+nav a:hover{background:rgba(255,255,255,.12);color:#fff}
+.hero{background:var(--navy);color:#fff;padding:56px 20px 60px}
+.w{max-width:1000px;margin:auto}
+main.w{padding:0 20px}
+h1{font-size:42px;margin:0 0 6px;letter-spacing:-.6px}
+.role{color:#5eead4;font-weight:600;margin:0 0 14px}
+.hero p{max-width:640px;color:#d5e0ee;margin:0 0 20px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;border:1px solid #5eead4;color:#5eead4;text-decoration:none;font-weight:600;margin:0 8px 8px 0}
+.btn.p{background:#14b8a6;border-color:#14b8a6;color:#062a27}
+.meta{color:#a9bad0;font-size:14px;margin-top:6px}.meta a{color:#e6f0fb}
+section{padding:46px 0 4px}
+h2{font-size:24px;margin:0 0 6px;padding-left:12px;border-left:4px solid var(--ac)}
+h3{font-size:15px;margin:0 0 8px}
+.sub{color:var(--mu);margin:0 0 20px;padding-left:16px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:12px;padding:18px;min-width:0}
+.card.t{border-top:3px solid var(--ac)}.card.a{border-top:3px solid var(--am)}
+.tag{display:inline-block;font-size:12px;font-weight:600;color:var(--ac);background:var(--acs);border-radius:5px;padding:2px 9px;margin:0 6px 6px 0}
+.tag.am{color:var(--am);background:var(--ams)}
+details.cs{background:var(--card);border:1px solid var(--ln);border-radius:12px;margin-bottom:14px;overflow:hidden}
+details.cs>summary{padding:20px 22px;font-size:18px}
+details.cs[open]>summary{border-bottom:1px solid var(--ln)}
+details.cs.pm{border-left:5px solid var(--ac)}details.cs.qa{border-left:5px solid var(--am)}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;align-items:center;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"View ▾";margin-left:auto;font-size:13px;font-weight:600;color:var(--ac)}
+details[open]>summary::after{content:"Hide ▴"}
+summary small{display:block;font-weight:400;color:var(--mu);font-size:13.5px}
+.in{padding:16px 22px 22px}
+details.sb{border:1px solid var(--ln);border-radius:9px;margin-top:10px;background:var(--bg)}
+details.sb>summary{padding:11px 14px;font-size:14.5px}
+details.sb .b{padding:4px 14px 14px}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px}
+th,td{border-bottom:1px solid var(--ln);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--acs);font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--ac)}
+.pass{color:#15803d;font-weight:700}.fail{color:#dc2626;font-weight:700}
+.kan{display:grid;grid-template-columns:repeat(4,minmax(150px,1fr));gap:10px;overflow-x:auto}
+.col{background:var(--card);border:1px solid var(--ln);border-radius:8px;padding:10px}
+.col h4{margin:0 0 8px;font-size:12px;text-transform:uppercase;color:var(--mu)}
+.tk{background:var(--bg);border:1px solid var(--ln);border-left:3px solid var(--ac);border-radius:6px;padding:7px 9px;margin-bottom:7px;font-size:13px}
+.tk small{display:block;color:var(--mu)}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px;color:var(--mu)}
+.flow span{background:var(--acs);color:var(--ac);border-radius:6px;padding:4px 11px;font-weight:600}
+.tl{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;min-width:560px;font-size:12px}
+.tl div{background:var(--acs);border-radius:6px;padding:8px}.tl b{display:block;color:var(--ac)}
+ul{margin:6px 0;padding-left:20px}
+.ph{color:var(--mu);font-size:12px;font-style:italic}
+.note{background:var(--ams);border-radius:8px;padding:10px 14px;font-size:13.5px;margin-bottom:6px}
+a.l{color:var(--ac)}
+footer{padding:34px 0 44px;color:var(--mu);font-size:13px}
+</style></head><body>
+<nav><b>A. Siddiqa</b><a href="#home">Home</a><a href="#projects">Projects</a><a href="#pm">Project Management</a><a href="#sqa">SQA</a><a href="#docs">Documentation</a><a href="#tools">Tools</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+
+<div class="hero" id="home"><div class="w">
+<h1>Ayesha Siddiqa</h1>
+<p class="role">BSCS | Project Coordination | Software Quality Assurance</p>
+<p>Computer Science student with internship experience in software quality assurance and project coordination. I test web applications, document and verify defects, and support planning, task tracking and reporting in Agile/Scrum workflows, bridging development teams and project delivery.</p>
+<a class="btn p" href="#pm">View My Work</a><a class="btn" href="#projects">View Projects</a><a class="btn" href="#contact">Contact Me</a>
+<div class="meta">Islamabad, Pakistan · <a href="mailto:ayeshasiddiqa1109200@gmail.com">ayeshasiddiqa1109200@gmail.com</a></div>
+</div></div>
+
+<main class="w">
+<section>
+<h2>Professional Experience</h2><p class="sub">Two internships, one connected skill set.</p>
+<div class="grid">
+<div class="card a"><span class="tag am">SQA</span><h3>SQA Intern · Developers Hub Corporation</h3><span class="ph">Remote · Apr 2026 – Jun 2026</span><ul><li>Executed manual test cases on web applications</li><li>Documented defects and verified bug fixes</li><li>Maintained test documentation</li></ul></div>
+<div class="card t"><span class="tag">Project Coordination</span><h3>Assistant Project Coordinator Intern · Tech-Bridge Systems</h3><span class="ph">Remote · Jun 2024 – Aug 2024</span><ul><li>Supported planning and task organization</li><li>Maintained documentation, prepared progress reports</li><li>Scheduled meetings, tracked deliverables</li></ul></div>
+</div>
+<h3 style="margin-top:22px">Core Capabilities</h3>
+<span class="tag">Project Coordination</span><span class="tag">Planning & Scheduling</span><span class="tag">Agile / Scrum</span><span class="tag">SDLC</span><span class="tag">Requirement Analysis</span><span class="tag">Task & Workflow Management</span><span class="tag">Deliverables Tracking</span><span class="tag">Progress Reporting</span><span class="tag am">Manual Testing</span><span class="tag am">Web App Testing</span><span class="tag am">Test Case Execution</span><span class="tag am">Defect Reporting</span><span class="tag am">Bug Verification</span><span class="tag am">Test Documentation</span>
+</section>
+
+<section id="projects">
+<h2>Featured Projects</h2>
+<p class="sub">Two case studies built on one <b>Demonstration Project</b> (not employer or client work). Click a case study to open it.</p>
+
+<details class="cs pm" id="pm"><summary><span><span class="tag">Case Study 01 · Demonstration Project</span><br>Project Management<small>Campus Event Registration Portal: requirements, WBS, sprint board, risks, reporting</small></span></summary>
+<div class="in">
+<div class="grid">
+<div class="card"><h3>Objective</h3>Deliver a portal where students register for university events.</div>
+<div class="card"><h3>My Role</h3>Project Coordinator (demonstration).</div>
+<div class="card"><h3>Stakeholders</h3>Organizers, students, faculty sponsor, developers, QA.</div>
+</div>
+
+<details class="sb"><summary>Scope & Requirements</summary><div class="b">
+<p><b>In scope:</b> event listing, registration, confirmation email, admin view. <b>Out:</b> payments, mobile app.</p>
+<div class="tw"><table><tr><th>ID</th><th>Requirement / User Story</th><th>Acceptance Criteria</th><th>Priority</th></tr>
+<tr><td>FR-01</td><td>As a student, I want to register for an event so I get a seat.</td><td>Inputs validated; confirmation shown.</td><td>High</td></tr>
+<tr><td>FR-02</td><td>As an organizer, I want to create an event so students can find it.</td><td>Title, date, capacity required.</td><td>High</td></tr>
+<tr><td>FR-03</td><td>As a student, I want an email confirmation as proof.</td><td>Email sent after registration.</td><td>Medium</td></tr>
+<tr><td>NFR-01</td><td>Usable on desktop and mobile browsers.</td><td>Layout works on common sizes.</td><td>Medium</td></tr></table></div></div></details>
+
+<details class="sb"><summary>WBS, Timeline & Milestones</summary><div class="b">
+<div class="grid"><div class="card"><b>1. Initiation</b><ul><li>Charter</li><li>Stakeholders</li></ul></div><div class="card"><b>2. Planning</b><ul><li>Requirements</li><li>Backlog</li></ul></div><div class="card"><b>3. Execution</b><ul><li>Registration</li><li>Admin, email</li></ul></div><div class="card"><b>4. Testing</b><ul><li>Test plan</li><li>Regression</li></ul></div><div class="card"><b>5. Closure</b><ul><li>Final report</li><li>Retrospective</li></ul></div></div>
+<div class="tw" style="margin-top:12px"><div class="tl"><div><b>Wk 1</b>Charter · M1</div><div><b>Wk 2</b>Requirements · M2</div><div><b>Wk 3–4</b>Sprint 1</div><div><b>Wk 5–6</b>Sprint 2</div><div><b>Wk 7</b>Testing · M3</div><div><b>Wk 8</b>Release · M4</div></div></div>
+<p class="ph">Dependency: FR-03 depends on FR-01; testing depends on Sprint 2.</p></div></details>
+
+<details class="sb"><summary>Sprint Board (Jira-style mockup)</summary><div class="b">
+<div class="kan">
+<div class="col"><h4>To Do</h4><div class="tk">EVT-11 Admin edit<small>Medium</small></div><div class="tk">EVT-12 Capacity limit<small>High</small></div></div>
+<div class="col"><h4>In Progress</h4><div class="tk">EVT-08 Confirmation email<small>Medium</small></div></div>
+<div class="col"><h4>Testing</h4><div class="tk">EVT-05 Registration form<small>High</small></div></div>
+<div class="col"><h4>Done</h4><div class="tk">EVT-01 Charter<small>PM</small></div><div class="tk">EVT-02 Requirements<small>PM</small></div></div></div>
+<p class="ph">Illustrative mockup, not a real screenshot. In Jira I organize backlog items, prioritize, plan sprints, assign work and track progress.</p></div></details>
+
+<details class="sb"><summary>Risk Register & Issue Log</summary><div class="b"><div class="tw"><table><tr><th>ID</th><th>Risk / Issue</th><th>Impact</th><th>Mitigation / Status</th></tr>
+<tr><td>R1</td><td>Requirements change late</td><td>High</td><td>Change request process</td></tr>
+<tr><td>R2</td><td>Developer unavailable</td><td>Medium</td><td>Task sharing, follow-ups</td></tr>
+<tr><td>I1</td><td>Event dates unclear</td><td>Medium</td><td>Resolved with sponsor</td></tr>
+<tr><td>I2</td><td>Test environment down</td><td>Medium</td><td>Open, owner: Dev A</td></tr></table></div></div></details>
+
+<details class="sb"><summary>Meeting Minutes & Weekly Status Report</summary><div class="b"><div class="grid">
+<div class="card"><h3>Sprint 1 Planning</h3><ul><li>Goal: registration flow</li><li>Action: PM finalizes acceptance criteria</li><li>Action: Dev A confirms estimates</li></ul></div>
+<div class="card"><h3>Status · Week 4</h3><ul><li>Progress: 3 of 5 sprint items done</li><li>Next: email confirmation, test prep</li><li>Blocker: test environment</li></ul></div></div>
+<p class="ph">Outcome: shows the full planning-to-closure workflow. No performance metrics are claimed.</p></div></details>
+
+<details class="sb"><summary>Agile Workflow</summary><div class="b">
+<div class="flow"><span>Backlog</span>→<span>Sprint Planning</span>→<span>Sprint</span>→<span>Daily Stand-up</span>→<span>Review</span>→<span>Retrospective</span></div><p></p>
+<div class="flow"><span>To Do</span>→<span>In Progress</span>→<span>Testing</span>→<span>Done</span></div></div></details>
+</div></details>
+
+<details class="cs qa" id="sqa"><summary><span><span class="tag am">Case Study 02 · Demonstration Project</span><br>Software Quality Assurance<small>Manual testing of login: test cases, bug report, lifecycle, regression, summary</small></span></summary>
+<div class="in">
+<p class="note">Format reflects the testing work of my SQA internship. Content is illustrative and contains no employer data.</p>
+<details class="sb"><summary>Test Plan & Test Data</summary><div class="b"><div class="grid"><div class="card"><h3>Test Plan</h3>Scope: login, registration. Type: manual functional and regression. Environment: Chrome, Windows. Exit: no open critical bugs.</div><div class="card"><h3>Test Data</h3>Valid and invalid emails, empty fields, wrong password, special characters.</div></div></div></details>
+<details class="sb"><summary>Test Cases · Login</summary><div class="b"><div class="tw"><table><tr><th>ID</th><th>Scenario</th><th>Steps</th><th>Expected</th><th>Actual</th><th>Status</th></tr>
+<tr><td>TC-01</td><td>Valid login</td><td>Valid email and password, Login</td><td>Dashboard opens</td><td>As expected</td><td class="pass">Pass</td></tr>
+<tr><td>TC-02</td><td>Wrong password</td><td>Valid email, wrong password</td><td>Error shown</td><td>As expected</td><td class="pass">Pass</td></tr>
+<tr><td>TC-03</td><td>Empty fields</td><td>Click Login with blanks</td><td>Validation shown</td><td>As expected</td><td class="pass">Pass</td></tr>
+<tr><td>TC-04</td><td>Invalid email format</td><td>Enter "abc@"</td><td>Format error</td><td>Form submitted</td><td class="fail">Fail</td></tr></table></div></div></details>
+<details class="sb"><summary>Sample Bug Report</summary><div class="b"><div class="tw"><table style="min-width:0">
+<tr><th>Bug ID</th><td>BUG-004</td></tr><tr><th>Title</th><td>Login accepts invalid email format</td></tr><tr><th>Environment</th><td>Chrome, Windows 11, QA build</td></tr>
+<tr><th>Steps</th><td>1. Open login page 2. Enter "abc@" as email 3. Enter any password, click Login</td></tr>
+<tr><th>Expected</th><td>Email format error</td></tr><tr><th>Actual</th><td>Form submits with no error</td></tr>
+<tr><th>Severity / Priority</th><td>Medium / Medium</td></tr><tr><th>Status</th><td>Fixed, awaiting verification</td></tr></table></div></div></details>
+<details class="sb"><summary>Bug Lifecycle, Regression & Summary</summary><div class="b">
+<div class="flow"><span>New</span>→<span>Assigned</span>→<span>Fixed</span>→<span>Verified</span>→<span>Closed</span></div>
+<ul><li>Verification: re-run TC-04 after the fix.</li><li>Regression: re-run TC-01 to TC-03 to confirm nothing else broke.</li></ul>
+<div class="tw"><table style="min-width:0"><tr><th>Executed</th><th>Pass</th><th>Fail</th><th>Open bugs</th></tr><tr><td>4</td><td>3</td><td>1</td><td>1</td></tr></table></div></div></details>
+</div></details>
+</section>
+
+<section id="docs">
+<h2>Documentation</h2><p class="sub">Document types I can produce. Placeholders until real files are added.</p>
+<details class="cs"><summary><span>Project & Test Documents<small>12 document types</small></span></summary><div class="in"><div class="grid">
+<div class="card t"><b>Project Charter</b><br><span class="ph">Placeholder</span></div><div class="card t"><b>Scope Statement</b><br><span class="ph">Placeholder</span></div><div class="card t"><b>Requirements Document</b><br><span class="ph">Placeholder</span></div><div class="card t"><b>User Stories</b><br><span class="ph">Placeholder</span></div><div class="card t"><b>WBS</b><br><span class="ph">Placeholder</span></div><div class="card t"><b>Project Timeline</b><br><span class="ph">Placeholder</span></div><div class="card t"><b>Risk Register</b><br><span class="ph">Placeholder</span></div><div class="card t"><b>Issue Log</b><br><span class="ph">Placeholder</span></div><div class="card t"><b>Meeting Minutes</b><br><span class="ph">Placeholder</span></div><div class="card t"><b>Status Report</b><br><span class="ph">Placeholder</span></div><div class="card t"><b>Change Request</b><br><span class="ph">Placeholder</span></div><div class="card a"><b>Test Documentation</b><br><span class="ph">Placeholder</span></div>
+</div></div></details>
+</section>
+
+<section id="tools">
+<h2>Tools & Approach</h2>
+<div class="grid" style="margin-top:14px">
+<div class="card t"><h3>Project Management</h3><span class="tag">Jira</span><span class="tag">PM software</span></div>
+<div class="card t"><h3>Process</h3><span class="tag">Agile</span><span class="tag">Scrum</span><span class="tag">SDLC</span></div>
+<div class="card a"><h3>QA</h3><span class="tag am">Manual Testing</span><span class="tag am">Bug Reporting</span><span class="tag am">Bug Verification</span></div>
+</div>
+<details class="cs" style="margin-top:14px"><summary><span>AI-Assisted Workflow<small>Illustrative, human-led</small></span></summary><div class="in">
+<div class="grid"><div class="card"><div class="flow"><span>Requirements</span>→<span>User story draft</span></div></div><div class="card"><div class="flow"><span>Meeting notes</span>→<span>Action items</span></div></div><div class="card"><div class="flow"><span>Project data</span>→<span>Status draft</span></div></div><div class="card"><div class="flow"><span>Bug description</span>→<span>Bug report</span></div></div></div>
+<p class="sub" style="padding:12px 0 0;margin:0">AI is used as an assisting tool for productivity, documentation and analysis, while project decisions and final validation remain human-led.</p></div></details>
+</section>
+
+<section id="about">
+<h2>About & Education</h2>
+<div class="grid" style="margin-top:14px">
+<div class="card t"><h3>Bachelor of Science in Computer Science</h3>Qurtuba University of IT<br>2023 – Present · GPA 3.8+ / 4.0</div>
+<div class="card t"><h3>Activities & Engagement</h3>Helped organize and coordinate university functions and events.<br><span class="tag">Teamwork</span><span class="tag">Coordination</span><span class="tag">Responsibility</span></div>
+</div></section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card t" style="margin-top:14px"><b>Ayesha Siddiqa</b><br>Email: <a class="l" href="mailto:ayeshasiddiqa1109200@gmail.com">ayeshasiddiqa1109200@gmail.com</a><br>Phone: 03140702240 · Islamabad, Pakistan
+<p style="margin-bottom:0">Open to relevant opportunities in IT, project coordination, software quality, and related roles.</p></div>
+</section>
+<footer>Case studies are demonstration projects created for this portfolio.</footer>
+</main>
+<script>
+function o(){var e=document.getElementById(location.hash.slice(1));if(e&&e.tagName==="DETAILS"){e.open=true;e.scrollIntoView()}}
+addEventListener("hashchange",o);addEventListener("load",o);
+</script>
+</body></html>
